@@ -135,6 +135,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ErrandService.cs" />
     <Compile Include="Services\SettingsContext.cs" />
+    <Compile Include="Services\StorageService.cs" />
     <Compile Include="Views\ActiveErrands.xaml.cs">
       <DependentUpon>ActiveErrands.xaml</DependentUpon>
     </Compile>

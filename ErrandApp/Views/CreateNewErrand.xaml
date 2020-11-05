@@ -50,8 +50,8 @@
             </ComboBox>
             <TextBox x:Name="CreatedBy" HorizontalAlignment="Left" Margin="10,10,0,0" 
                      Grid.Row="0" PlaceholderText="Created by" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="250" TabIndex="7"/>
-            <Button x:Name="uploadPicture" Content="Attach picture" Height="49" Width="250" FontSize="15" Padding="10" Margin="10" Click="uploadPicture_Click"/>
-            <TextBlock x:Name="OutputTextBlock" HorizontalAlignment="Left" Margin="10" Grid.Row="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="auto"/>
+            <Button x:Name="btnattachPicture" Content="Attach picture" Height="49" Width="250" FontSize="15" Padding="10" Margin="10" Click="btnattachPicture_Click"/>
+            <TextBlock x:Name="OutputTextBlock" HorizontalAlignment="Left" Margin="10" Grid.Row="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="auto" FontSize="10"/>
 
         </StackPanel>
 

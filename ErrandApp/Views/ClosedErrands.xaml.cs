@@ -15,13 +15,10 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ErrandApp.Views
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class ClosedErrands : Page
     {
         public ClosedErrands()
@@ -29,11 +26,10 @@ namespace ErrandApp.Views
             this.InitializeComponent();
         }
 
-
         private void btnClosed_Click(object sender, RoutedEventArgs e)
         {
             lvClosed.ItemsSource = ErrandService.GetErrandsClosed((Application.Current as App)
-                .connectionString).Take(Settings.SetItemsMax());
+                .connectionString).Take(Views.Settings.SetItemsMax());
         }
 
         private void lvClosed_ItemClick(object sender, ItemClickEventArgs e)

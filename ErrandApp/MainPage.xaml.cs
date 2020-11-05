@@ -30,7 +30,7 @@ namespace ErrandApp
 
         private void navView_Loaded(object sender, RoutedEventArgs e)
         {
-            ContentFrame.Navigate(typeof(Home));
+            ContentFrame.Navigate(typeof(Settings));
             
         }
 

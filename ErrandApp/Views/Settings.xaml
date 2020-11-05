@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="ErrandApp.Views.Settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ErrandApp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Settings" Grid.Row="0" FontWeight="Bold" FontSize="40"/>
+
+        <StackPanel Grid.Row="1" Margin="0,10,0,0" Width="300" HorizontalAlignment="Left">
+            <TextBlock Text="Set max displayed Items" FontSize="20" Margin="0,10,0,0" HorizontalAlignment="Left"/>
+            <ComboBox x:Name="cmbsetmaxItemsActive" Width="100">
+            </ComboBox>
+            <Button x:Name="loadSettings" Content="Load settings" Margin="0,10,0,0" Click="loadSettings_Click"/>
+
+        </StackPanel>
+        
+
+
+    </Grid>
+</Page>
